@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "url-shortener"
+version = "0.1.0"
+description = "A URL shortening and management CLI with click statistics."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Xu Jiaqi", email = "jiaqixu12138@gmail.com" }]
+dependencies = ["click>=8.0.0", "rich>=13.0.0"]
+
+[project.scripts]
+shorten = "url_shortener.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Master-626/url-shortener"
